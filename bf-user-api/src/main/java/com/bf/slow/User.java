@@ -1,4 +1,4 @@
-package com.bf.slow.entity;
+package com.bf.slow;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -16,7 +16,7 @@ import java.io.Serializable;
  */
 @Data
 @TableName("user")
-public class User<T extends Model<?>> extends Model<T> {
+public class User extends AbstractEntity {
     private String id;
     private String nickName;
     private String openId;

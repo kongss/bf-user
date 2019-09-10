@@ -1,8 +1,7 @@
 package com.bf.slow.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.bf.slow.User;
+import com.bf.slow.Slow;
 
-public interface UserInfoMapper extends BaseMapper<User> {
-
+public interface SlowMapper extends BaseMapper<Slow> {
 }
