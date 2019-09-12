@@ -2,8 +2,7 @@ package com.bf.slow.api.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.bf.slow.api.ProjectApi;
-import com.bf.slow.Project;
-import com.bf.slow.common.MessengerVo;
+import com.bf.slow.api.entity.Project;
 import com.bf.slow.dao.ProjectMapper;
 import org.apache.dubbo.config.annotation.Service;
 
@@ -18,23 +17,4 @@ import org.apache.dubbo.config.annotation.Service;
 @Service
 public class ProjectImpl extends ServiceImpl<ProjectMapper, Project> implements ProjectApi {
 
-    @Override
-    public MessengerVo add(MessengerVo messenger) {
-        return null;
-    }
-
-    @Override
-    public MessengerVo delete(MessengerVo messenger) {
-        return null;
-    }
-
-    @Override
-    public MessengerVo update(MessengerVo messenger) {
-        return null;
-    }
-
-    @Override
-    public MessengerVo selete(MessengerVo messenger) {
-        return null;
-    }
 }

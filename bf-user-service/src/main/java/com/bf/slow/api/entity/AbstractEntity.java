@@ -1,4 +1,4 @@
-package com.bf.slow;
+package com.bf.slow.api.entity;
 
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
@@ -9,9 +9,13 @@ import lombok.Data;
  * @author kongshuaishuai
  * Created on 2019/5/20 12:48
  * Email is kongshuaishuai@mrfresh.com
- * Copyright is 北京滴哩网络科技有限公司
+ * Copyright is
  */
 @Data
 public class AbstractEntity<T extends Model<?>> extends Model<T> {
-    private String id;
+    private String id; //ID
+    private String creater; //创建人
+    private String createTime; //创建时间
+    private String updater; //更新人
+    private String updateTime; //更新时间
 }
